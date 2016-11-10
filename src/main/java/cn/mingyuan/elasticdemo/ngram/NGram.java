@@ -1,4 +1,4 @@
-package ngram;
+package cn.mingyuan.elasticdemo.ngram;
 
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.cjk.CJKAnalyzer;

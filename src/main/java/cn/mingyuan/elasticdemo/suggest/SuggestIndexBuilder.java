@@ -1,6 +1,6 @@
-package suggest;
+package cn.mingyuan.elasticdemo.suggest;
 
-import base.BaseTransportClient;
+import cn.mingyuan.elasticdemo.base.BaseTransportClient;
 import com.alibaba.fastjson.JSON;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -61,11 +61,13 @@ public class SuggestIndexBuilder extends BaseTransportClient {
             System.out.println(jsonString);
             IndexResponse res = client.prepareIndex("username", "weixin").setSource(jsonString).get();
         }
-
     }
 
-    public static void main(String[] args) throws IOException {
-        doIndex();
+    public static void main(String[] args) {
+        try {
+            doIndex();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
-
 }

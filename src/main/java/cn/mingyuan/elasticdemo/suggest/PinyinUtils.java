@@ -1,4 +1,4 @@
-package suggest;
+package cn.mingyuan.elasticdemo.suggest;
 
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.core.KeywordAnalyzer;

@@ -1,4 +1,4 @@
-package suggest;
+package cn.mingyuan.elasticdemo.suggest;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
