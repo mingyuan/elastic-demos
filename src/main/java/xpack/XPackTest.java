@@ -26,7 +26,7 @@ public class XPackTest {
     public static void main(String[] args) throws UnknownHostException {
         System.setProperty("log4j.configurationFile", "conf/log4j.properties");
         System.setProperty("log4j2.disable.jmx", Boolean.TRUE.toString());
-        Settings settings = Settings.builder().put("cluster.name", "es5").put("xpack.security.user", "mingyuan:haowai*#2016").put("client.transport.sniff", true).build();
+        Settings settings = Settings.builder().put("cluster.name", "es5").put("xpack.security.user", "").put("client.transport.sniff", true).build();
         TransportClient client = new PreBuiltXPackTransportClient(settings);
         client.addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName("vm1"), 9300));
         addShutdownHook(client);
