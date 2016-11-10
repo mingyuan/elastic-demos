@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "weixin": {
+      "properties": {
+        "name": {
+          "type": "completion"
+        }
+      }
+    }
+  }
+}
