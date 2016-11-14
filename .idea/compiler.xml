@@ -28,7 +28,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="elastic-demos" target="1.8" />
-      <module name="es5.0" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
