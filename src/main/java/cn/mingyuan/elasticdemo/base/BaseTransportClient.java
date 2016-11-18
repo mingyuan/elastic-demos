@@ -42,6 +42,7 @@ public class BaseTransportClient {
     private static void addShutdownHook(TransportClient client) {
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             if (client != null) {
+                System.out.println("... es client closing ...");
                 client.close();
                 System.out.println("... es client closed ...");
             }
